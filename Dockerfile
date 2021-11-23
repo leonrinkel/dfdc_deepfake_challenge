@@ -48,6 +48,8 @@ RUN chmod 777 preprocess_data.sh
 RUN chmod 777 train.sh
 RUN chmod 777 predict_submission.sh
 
+RUN /bin/bash download_weights.sh
+
 ENV PYTHONPATH=.
 
 CMD ["/bin/bash"]

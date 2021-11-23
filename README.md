@@ -1,3 +1,15 @@
+### Usage
+
+```
+docker run \
+    --rm -it --gpus all \
+    -v `pwd`/test_videos:/data \
+    leonrinkel/dfdc_deepfake_challenge \
+    ./predict_submission.sh /data /data/submission.csv
+```
+
+---
+
 ## DeepFake Detection (DFDC) Solution by @selimsef
 
 ## Challenge details:
